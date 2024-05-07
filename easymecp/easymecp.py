@@ -936,7 +936,7 @@ def _parse_energy_cis(f, line, fields, default=None):
 
 
 def _parse_energy_td(f, line, fields, default=None):
-    if len(fields) > 4 and fields[2] == 'E(TD-HF/TD-KS)':
+    if len(fields) > 4 and fields[2] == 'E(TD-HF/TD-DFT)':
         return float(fields[4])
     return default
 
